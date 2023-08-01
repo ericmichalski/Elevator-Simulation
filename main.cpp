@@ -104,6 +104,11 @@ int main()
 	cout << "Average Rider Travel Time: " << *totalRiderTravelTime / *totalRidersServed << " seconds" << endl;
 	cout << "****************************************************************" << endl;
 
+	cout << "\nPress Enter twice to end";
+	fgetc(stdin);
+	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	cout << endl << endl;
+
 	return 0;
 }
 
